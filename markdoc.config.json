@@ -1,0 +1,9 @@
+[
+  {
+    "id": "aptutorials",
+    "path": "content/blog",
+    "routing": {
+      "frontmatter": "route"
+    }
+  }
+]
