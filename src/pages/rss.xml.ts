@@ -3,7 +3,7 @@ import { blog } from "../lib/markdoc/frontmatter.schema";
 import { readAll } from "../lib/markdoc/read";
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "../config";
 
-export const get = async () => {
+export async function GET() {
   const posts = await readAll({
     directory: "blog",
     frontmatterSchema: blog,
