@@ -56,6 +56,10 @@ Codespaces can cost you money if you exceed the free tier. Be sure to check the 
 
 More on this: [GitHub Codespaces Pricing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts)
 
+## STOP YOUR CODESPACE ⚠️
+
+When you're done with your Codespace, you can stop it to save resources. To do this, click on the "Stop" button in the Codespace's page.
+
 ## The Activepieces stuff
 
 When you create a new Codespace for Activepieces, you need to wait for a few minutes for the environment to be ready. Once the environment is ready, you can start coding right away. It will install all the necessary dependencies and tools for you. Also, it will recommend you to install the recommended extensions for the project (install that).

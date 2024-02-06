@@ -18,9 +18,10 @@ import Comments from "../components/Comments.astro";
 export interface Props {
   title: string;
   date: Date;
+  tags: string[];
 }
 
-const { title, date } = Astro.props;
+const { title, date, tags } = Astro.props;
 const formattedDate = new Date(date).toLocaleDateString("en-us", {
   year: "numeric",
   month: "short",
@@ -56,6 +57,15 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
             {title}
           </span>
         </h1>
+        <div class="py-1">
+          <div class="flex flex-wrap justify-end">
+            {tags.map((tag) => (
+              <div class="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-full text-gray-700 border border-gray-300 ">
+                <div class="text-s font-normal leading-none max-w-full flex-initial">{tag}</div>
+              </div>
+            ))}
+          </div>
+        </div>
         <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
         <slot name="content" />
       </section>
