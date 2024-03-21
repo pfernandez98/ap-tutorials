@@ -43,6 +43,10 @@
   content: "\f099";
 }
 
+.fa-patreon:before {
+  content: "\f3d9"; 
+}
+
 .fa-square-twitter:before {
   content: "\f081";
 }
